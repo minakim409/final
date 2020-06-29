@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MBTI Test</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+</head>
+<body>
+<form class="container">
+	<div class="vragen">
+		<h1><strong>Simple MBTI Test</strong></h1>
+		<hr>
+		<div class="form-group">
+			<div class="row input-group">
+				<label for="v1" class="col-1 control-label text-right">1</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="col-xs-auto btn btn-secondary btn-sm active" data-toggle="v1" data-title="e">Expand energy, enjoy groups</a>
+					<a class="col-xs-auto btn btn-secondary btn-sm notActive" data-toggle="v1" data-title="i">Conserve energy, enjoy one-on-one.</a>
+				</div>
+				<input type="hidden" name="v1" id="v1" value="e">
+			</div>
+			<div class="row input-group">
+				<label for="v2" class="col-1 control-label text-right">2</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v2" data-title="s">Interpret literally.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v2" data-title="n">Look for meaning and possibilities.</a>
+				</div>
+				<input type="hidden" name="v2" id="v2" value="s">
+			</div>
+			<div class="row input-group">
+				<label for="v3" class="col-1 control-label text-right">3</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v3" data-title="t">Logical, thinking, questioning.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v3" data-title="f">Empathetic, feeling, accommodating.</a>
+				</div>
+				<input type="hidden" name="v3" id="v3" value="t">
+			</div>
+			<div class="row input-group">
+				<label for="v4" class="col-1 control-label text-right">4</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v4" data-title="j"> Organized, orderly.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v4" data-title="p">Flexible, adaptable.</a>
+				</div>
+				<input type="hidden" name="v4" id="v4" value="j">
+			</div>
+			<div class="row input-group">
+				<label for="v5" class="col-1 control-label text-right">5</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v5" data-title="e"> More outgoing, think out loud.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v5" data-title="i">More reserved, think to yourself.</a>
+				</div>
+				<input type="hidden" name="v5" id="v5" value="e">
+			</div>
+			<div class="row input-group">
+				<label for="v6" class="col-1 control-label text-right">6</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v6" data-title="s"> Practical, realistic, experiential.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v6" data-title="n">Imaginative, innovative, theoretical.</a>
+				</div>
+				<input type="hidden" name="v6" id="v6" value="s">
+			</div>
+			<div class="row input-group">
+				<label for="v7" class="col-1 control-label text-right">7</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v7" data-title="t"> Straight forward, frank.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v7" data-title="f"> Kind, encouraging.</a>
+				</div>
+				<input type="hidden" name="v7" id="v7" value="t">
+			</div>
+			<div class="row input-group">
+				<label for="v8" class="col-1 control-label text-right">8</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v8" data-title="j"> Plan, schedule.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v8" data-title="p"> Unplanned, spontaneous.</a>
+				</div>
+				<input type="hidden" name="v8" id="v8" value="j">
+			</div>
+			<div class="row input-group">
+				<label for="v9" class="col-1 control-label text-right">9 </label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v9" data-title="e"> Seek many tasks, public activities, interaction with others.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v9" data-title="i"> Seek private, solitary activities with quiet to concentrate.</a>
+				</div>
+				<input type="hidden" name="v9" id="v9" value="e">
+			</div>
+			<div class="row input-group">
+				<label for="v10" class="col-1 control-label text-right">10</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v10" data-title="s"> Standard, usual, conventional.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v10" data-title="n"> Different, novel, unique.</a>
+				</div>
+				<input type="hidden" name="v10" id="v10" value="s">
+			</div>
+			<div class="row input-group">
+				<label for="v11" class="col-1 control-label text-right">11</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v11" data-title="t"> Firm, tend to criticize, hold the line.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v11" data-title="f"> Gentle, tend to appreciate, conciliate.</a>
+				</div>
+				<input type="hidden" name="v11" id="v11" value="t">
+			</div>
+			<div class="row input-group">
+				<label for="v12" class="col-1 control-label text-right">12</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v12" data-title="j"> Regulated, structured.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v12" data-title="p"> Easygoing, “live” and “let live”.</a>
+				</div>
+				<input type="hidden" name="v12" id="v12" value="j">
+			</div>
+			<div class="row input-group">
+				<label for="v13" class="col-1 control-label text-right">13</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v13" data-title="e"> Wxternal, communicative, express yourself.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v13" data-title="i"> Internal, reticent, keep to yourself.</a>
+				</div>
+				<input type="hidden" name="v13" id="v13" value="e">
+			</div>
+			<div class="row input-group">
+				<label for="v14" class="col-1 control-label text-right">14</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v14" data-title="s"> Focus on here-and-now.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v14" data-title="n"> Look to the future, global perspective, “big picture”.</a>
+				</div>
+				<input type="hidden" name="v14" id="v14" value="s">
+			</div>
+			<div class="row input-group">
+				<label for="v15" class="col-1 control-label text-right">15</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v15" data-title="t"> Tough-minded, just.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v15" data-title="f"> Tender-hearted, merciful.</a>
+				</div>
+				<input type="hidden" name="v15" id="v15" value="t">
+			</div>
+			<div class="row input-group">
+				<label for="v16" class="col-1 control-label text-right">16</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v16" data-title="j"> Preparation, plan ahead.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v16" data-title="p"> Go with the flow, adapt as you go.</a>
+				</div>
+				<input type="hidden" name="v16" id="v16" value="j">
+			</div>
+			<div class="row input-group">
+				<label for="v17" class="col-1 control-label text-right">17</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v17" data-title="e"> Active, initiate.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v17" data-title="i"> Reflective, deliberate.</a>
+				</div>
+				<input type="hidden" name="v17" id="v17" value="e">
+			</div>
+			<div class="row input-group">
+				<label for="v18" class="col-1 control-label text-right">18</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v18" data-title="s"> Facts, things, “what is”.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v18" data-title="n"> Ideas, dreams, “what could be,” philosophical.</a>
+				</div>
+				<input type="hidden" name="v18" id="v18" value="s">
+			</div>
+			<div class="row input-group">
+				<label for="v19" class="col-1 control-label text-right">19</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v19" data-title="t"> Matter of fact, issue-oriented.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v19" data-title="f"> Sensitive, people-oriented, compassionate.</a>
+				</div>
+				<input type="hidden" name="v19" id="v19" value="t">
+			</div>
+			<div class="row input-group">
+				<label for="v20" class="col-1 control-label text-right">20</label>
+				<div id="radioBtn" class="btn-group flex-wrap">
+					<a class="btn btn-secondary btn-sm active" data-toggle="v20" data-title="j"> Control, govern.</a>
+					<a class="btn btn-secondary btn-sm notActive" data-toggle="v20" data-title="p"> Latitude, freedom.</a>
+				</div>
+				<input type="hidden" name="v20" id="v20" value="j">
+			</div>
+		</div>
+		<button id="submit">View results</button>
+	</div>
+</form>
+<div class="results">
+	<div id="value">
+		<h2 id="res"></h2>
+		<!-- <h3>Values</h3> -->
+		<p id="IE"></p>
+		
+		<p id="SN"></p>
+		
+		<p id="TF"></p>
+		
+		<p id="JP"></p>
+		
+		<h3>Description</h3>
+	</div>
+	<p id="overview"></p>
+</div>
+<!-- <div id="links">
+              <h3>References</h3>
+                    <a href="http://www.mypersonality.info/personality-types/careers/">Personality Test Careers</a>
+                    <br>
+                    <a href="http://www.freelinks.com/guide/test/personality.php">Personality Test Information</a>
+                    <br>
+                    <a href="http://dec.co.th/mbti_explanation.htm">Personality Tests Explanation</a>
+                    <br>
+                    <a href="http://forums.intpcentral.com/showthread.php?24347-Printable-MBTI-test">Meyers Briggs Test</a>
+          </div> -->
+<!-- </div> -->
+<!-- https://www.myersbriggs.org/my-mbti-personality-type/mbti-basics/the-16-mbti-types.htm -->
+<script src="script.js"></script>
+</body>
+</html>
